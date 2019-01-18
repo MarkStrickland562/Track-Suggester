@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Tracker Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-border bg-beige">
+        <div class="col-md-12 col-noborder">
+          <img class="photofloat" src="img/epicodus.png" alt="Epicodus Logo."
+               width="20%" height="20%">
+          <h4>Which Epicodus Track is Right for You?</h4>
+          <p>Epicodus students must decide which track they would like to pursue before they enroll. While all languages have similarities,
+             and switching between languages and platforms is very common in both internships and jobs, applicants should still choose the
+             track they wish to complete with care.<br><br>
+             Currently, Epicodus offers the following tracks in Portland and Seattle:</p>
+          <ul>
+            <li>Ruby/Rails</li>
+            <li>PHP/Drupal</li>
+            <li>Java/Android</li>
+            <li>CSS/Design</li>
+            <li>C#/.NET</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row row-border bg-beige">
+        <div class="col-md-4 col-noborder">
+          <form id="NameInfo">
+            <div class="form-group">
+              <label for="FirstName">First Name:</label>
+              <input id="FirstName" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="MiddleName">Middle Name (or Initial):</label>
+              <input id="MiddleName" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="LastName">Last Name:</label>
+              <input id="LastName" class="form-control" type="text">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row row-border bg-beige">
+        <div class="col-md-4 col-noborder">
+          <p>How important is it to see the results of your work in a browser?</p>
+          <form id="Visuals">
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="visuals" value="1" checked>
+                Very Important!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="visuals" value="2">
+                Somewhat Important
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="visuals" value="3">
+                Not important
+              </label>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-submit">Show me my suggested Epicodus track!</button>
+      <div id="output">
+
+    </div>
+  </body>
+</html>

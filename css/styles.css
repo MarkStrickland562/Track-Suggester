@@ -1,0 +1,53 @@
+img {
+  float: left;
+  border-style: double;
+  border: 2px solid;
+}
+.hcenter {
+  text-align: center
+}
+.photofloat {
+  font-size: 18px;
+  font-style: italic;
+  padding-right: 8px;
+}
+.floattext {
+  font-size: 18px;
+  font-style: italic;
+  padding-right: 8px;
+  height: 120px;
+  width: 150px;
+}
+.bg-beige {
+  background-color: beige;
+}
+.jumbo-color {
+  background-color: bisque;
+  color: darkblue;
+}
+.row-border {
+  border: 2px solid;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: : 4px;
+  margin-bottom: 4px;
+}
+.col-border {
+  border-left: 1px solid;
+  border-right: : 1px solid;
+  padding: 5px;
+}
+.col-noborder {
+  padding: 5px;
+}
+h5 {
+  font-style: italic;
+  font-weight: bold;
+}
+#em-h {
+  font-style: italic;
+  font-weight: bold;
+}
+#list {
+  font-size: 12px;
+}

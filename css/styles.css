@@ -3,6 +3,7 @@ img {
   border-style: double;
   border: 2px solid;
   padding: 4px;
+  fadeIn;
 }
 .photofloat {
   font-size: 18px;

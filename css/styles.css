@@ -41,13 +41,20 @@ img {
   padding: 5px;
 }
 h5 {
-  font-style: italic;
   font-weight: bold;
 }
 #em-h {
   font-style: italic;
   font-weight: bold;
 }
+li {
+  font-style: italic;
+}
 #list {
   font-size: 12px;
+}
+.btn-submit {
+  background-color: green;
+  color: white;
+  font-weight: bold;
 }

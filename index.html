@@ -25,9 +25,11 @@
             <li>CSS/Design</li>
             <li>C#/.NET</li>
           </ul>
+          <p>Note that all tracks must complete the Intro and Javascript courses.</p>
         </div>
       </div>
       <div class="row row-border bg-beige">
+        <h4>Please enter your name:</h4>
         <div class="col-md-4 col-noborder">
           <form id="NameInfo">
             <div class="form-group">
@@ -35,7 +37,7 @@
               <input id="FirstName" class="form-control" type="text">
             </div>
             <div class="form-group">
-              <label for="MiddleName">Middle Name (or Initial):</label>
+              <label for="MiddleName">Middle Name or Initial (optional):</label>
               <input id="MiddleName" class="form-control" type="text">
             </div>
             <div class="form-group">
@@ -46,8 +48,8 @@
         </div>
       </div>
       <div class="row row-border bg-beige">
-        <div class="col-md-4 col-noborder">
-          <p>How important is it to see the results of your work in a browser?</p>
+        <div class="col-md-4 col-border">
+          <h5>How important is it to see the results of your work in a browser?</h5>
           <form id="Visuals">
           <div class="form-group">
             <div class="radio">
@@ -71,7 +73,108 @@
           </div>
           </form>
         </div>
+        <div class="col-md-4 col-border">
+          <h5>Please select your preferred operating system:</h5>
+          <form id="OSystem">
+          <div class="form-group">
+            <select class="form-control" id="os">
+              <option>Microsoft Windows</option>
+              <option>Apple iOS</option>
+              <option>Unix/Lunix</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="col-md-4 col-border">
+          <h5>Do you prefer business logic or user interface logic?</h5>
+          <form id="Logic">
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="logics" value="1" checked>
+                Business Logic
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="logics" value="2">
+                User Interface Logic
+              </label>
+            </div>
+          </div>
+          </form>
+        </div>
       </div>
+
+      <div class="row row-border bg-beige">
+        <div class="col-md-4 col-border">
+          <h5>Do you consider yourself more of an abstract thinker or literal thinker?</h5>
+          <form id="Thinker">
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="thinker" value="1">
+                Abstract Thinker
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="thinker" value="2">
+                Literal Thinker
+              </label>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="col-md-4 col-border">
+          <h5>Which track sounds coolest to you?></h5>
+            <form id="Coolest">
+            <div class="form-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="1">
+                  Ruby/Rails
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="2">
+                  Ruby/Rails
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="3">
+                  PHP/Drupal
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="4">
+                  CSS/Design
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="5">
+                  C#/.NET
+                </label>
+              </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-md-4 col-border">
+          <h5>Which track do you think you would prefer? (optional)</h5>
+          <select class="form-control" id="preferred">
+            <option>Ruby/Rails</option>
+            <option>PHP/Drupal</option>
+            <option>Java/Android</option>
+            <option>CSS/Design</option>
+            <option>C#/.NET</option>
+          </select>
+        </div>
+      </div>
+
       <button type="submit" class="btn btn-submit">Show me my suggested Epicodus track!</button>
       <div id="output">
 

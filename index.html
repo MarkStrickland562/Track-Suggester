@@ -13,10 +13,11 @@
         <div class="col-md-12 col-noborder">
           <img class="photofloat" src="img/epicodus.png" alt="Epicodus Logo."
                width="20%" height="20%">
-          <h4>Which Epicodus Track is Right for You?</h4>
+          <h3>Which Epicodus Track is Right for You?</h3>
           <p>Epicodus students must decide which track they would like to pursue before they enroll. While all languages have similarities,
              and switching between languages and platforms is very common in both internships and jobs, applicants should still choose the
-             track they wish to complete with care.<br><br>
+             track they wish to complete with care. The most important thing is to get the basic principles of coding down, practice a lot,
+             and be ready to change to another language when your job inevitably does.<br><br>
              Currently, Epicodus offers the following tracks in Portland and Seattle:</p>
           <ul>
             <li>Ruby/Rails</li>
@@ -31,30 +32,26 @@
       <div class="row row-border bg-beige">
         <h4>Please enter your name:</h4>
         <div class="col-md-4 col-noborder">
-          <form id="NameInfo">
-            <div class="form-group">
-              <label for="FirstName">First Name:</label>
-              <input id="FirstName" class="form-control" type="text">
-            </div>
-            <div class="form-group">
+            <label for="FirstName">First Name:</label>
+            <input id="FirstName" class="form-control" type="text">
+        </div>
+        <div class="col-md-4 col-noborder">
               <label for="MiddleName">Middle Name or Initial (optional):</label>
               <input id="MiddleName" class="form-control" type="text">
-            </div>
-            <div class="form-group">
+        </div>
+        <div class="col-md-4 col-noborder">
               <label for="LastName">Last Name:</label>
               <input id="LastName" class="form-control" type="text">
-            </div>
-          </form>
         </div>
       </div>
       <div class="row row-border bg-beige">
-        <div class="col-md-4 col-border">
+        <div class="col-md-4 col-noborder">
           <h5>How important is it to see the results of your work in a browser?</h5>
           <form id="Visuals">
           <div class="form-group">
             <div class="radio">
               <label>
-                <input type="radio" name="visuals" value="1" checked>
+                <input type="radio" name="visuals" value="1">
                 Very Important!
               </label>
             </div>
@@ -81,17 +78,19 @@
               <option>Microsoft Windows</option>
               <option>Apple iOS</option>
               <option>Unix/Lunix</option>
+              <option>No Preference</option>
             </select>
           </div>
+          <p><br><br><br></p>
           </form>
         </div>
-        <div class="col-md-4 col-border">
+        <div class="col-md-4 col-noborder">
           <h5>Do you prefer business logic or user interface logic?</h5>
           <form id="Logic">
           <div class="form-group">
             <div class="radio">
               <label>
-                <input type="radio" name="logics" value="1" checked>
+                <input type="radio" name="logics" value="1">
                 Business Logic
               </label>
             </div>
@@ -101,13 +100,18 @@
                 User Interface Logic
               </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="logics" value="3">
+                No Preference
+              </label>
+            </div>
           </div>
           </form>
         </div>
       </div>
-
       <div class="row row-border bg-beige">
-        <div class="col-md-4 col-border">
+        <div class="col-md-4 col-noborder">
           <h5>Do you consider yourself more of an abstract thinker or literal thinker?</h5>
           <form id="Thinker">
           <div class="form-group">
@@ -123,8 +127,15 @@
                 Literal Thinker
               </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="thinker" value="2">
+                Either
+              </label>
+            </div>
           </div>
           </form>
+          <p><br><br></p>
         </div>
         <div class="col-md-4 col-border">
           <h5>Which track sounds coolest to you?></h5>
@@ -132,51 +143,70 @@
             <div class="form-group">
               <div class="radio">
                 <label>
-                  <input type="radio" name="coolest" value="1">
+                  <input type="radio" name="coolest" value="Ruby/Rails">
                   Ruby/Rails
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="coolest" value="2">
-                  Ruby/Rails
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="coolest" value="3">
+                  <input type="radio" name="coolest" value="PHP/Drupal">
                   PHP/Drupal
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="coolest" value="4">
+                  <input type="radio" name="coolest" value="JavaAndroid">
+                  Java/Android
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="CSS/Design">
                   CSS/Design
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="coolest" value="5">
+                  <input type="radio" name="coolest" value="C#/.NET">
                   C#/.NET
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="coolest" value="all">
+                  They're all cool!
                 </label>
               </div>
             </div>
             </form>
         </div>
-        <div class="col-md-4 col-border">
+        <div class="col-md-4 col-noborder">
           <h5>Which track do you think you would prefer? (optional)</h5>
-          <select class="form-control" id="preferred">
-            <option>Ruby/Rails</option>
-            <option>PHP/Drupal</option>
-            <option>Java/Android</option>
-            <option>CSS/Design</option>
-            <option>C#/.NET</option>
-          </select>
+          <form id="Preference">
+            <div class="form-group">
+              <select class="form-control" id="preferred">
+                <option>Ruby/Rails</option>
+                <option>PHP/Drupal</option>
+                <option>Java/Android</option>
+                <option>CSS/Design</option>
+                <option>C#/.NET</option>
+                <option>None</option>
+              </select>
+            </div>
+          </form>
+          <p><br><br><br></p>
         </div>
       </div>
 
-      <button type="submit" class="btn btn-submit">Show me my suggested Epicodus track!</button>
-      <div id="output">
+      <form id="response">
+        <button type="submit" class="btn btn-submit">Show me my suggested Epicodus track!</button>
+        <div id="suggestion" class="row row-border bg-info">
+          <h4>Congratulations, <span class="fullname"></span>! You have a recommended Epicodus track!</h4>
+            <p>We recommend that you focus on the <span id="track"></span> track <span id="coolphrase"></span>
+               Click <a href = "https://www.epicodus.com" title="Epicodus">here</a> for more information.
+               Thank you, <span id="fname"></span>, for participating in this survey!</p>
+        </div>
+      </form>
 
     </div>
   </body>
